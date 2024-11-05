@@ -1,10 +1,10 @@
-
 const RegisterButton = () => {
-  return (
-    <button className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-      Register Now
-    </button>
-  );
-};
-
-export default RegisterButton;
+    return (
+      <button className="mt-4 bg-transparent border-2 border-white hover:bg-white hover:text-blue-500 transition duration-300 ease-in-out text-white font-bold py-2 px-4 rounded">
+        Register Now
+      </button>
+    );
+  };
+  
+  export default RegisterButton;
+  
