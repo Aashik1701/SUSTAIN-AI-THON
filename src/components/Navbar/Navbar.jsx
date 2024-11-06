@@ -1,8 +1,8 @@
 import RegisterButton from "../Register/RegisterButton";
-
 const Navbar = () => {
   return (
-    <nav className="p-4 outline text-white flex justify-between">
+    <nav className="p-4  outline-dashed outline-2 outline-offset-2 text-white flex justify-between">
+        
       <div className="logo">LOGO</div>
       <div className="links flex space-x-4">
         <a href="#home">Home</a>
