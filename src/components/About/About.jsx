@@ -14,12 +14,8 @@ const About = () => {
           <p className="text-white">
           The Artificial Intelligence Club at VIT Chennai is a dynamic community of tech enthusiasts, aspiring data scientists, and innovators passionate about Artificial
           Intelligence, Machine Learning, and Data Science. Renowned for its engaging hackathons, coding challenges, and hands-on workshops led by industry experts and alumni, the club offers students an immersive platform
-          to explore and create impactful AI solutions.
-          Members gain valuable technical skills,
-          mentorship, and networking opportunities,
-          equipping them with the tools and experience
-          needed for successful careers and influential
-          projects in the rapidly evolving AI landscape.
+          to explore and create impactful AI solutions. Members gain valuable technical skills, mentorship, and networking opportunities,
+          equipping them with the tools and experience needed for successful careers and influential projects in the rapidly evolving AI landscape.
           </p>
         </div>
       </div>
@@ -29,8 +25,10 @@ const About = () => {
         <div className="flex-1 text-left">
           <h2 className="text-4xl font-bold mb-4 text-white">Biosphere Club</h2>
           <p className="text-white">
-            The Biosphere Club focuses on environmental awareness and sustainability. 
-            We aim to educate and inspire members to take action in protecting our planet.
+          The Biosphere Club at VIT Chennai was started with the vision of raising awareness and making a meaningful impact on pressing
+          environmental issues such as global warming and climate change. Driven by a commitment to sustainability and to creating a better world
+          for future generations, the club organizes a range of initiatives, including beach cleanup drives, plantation projects, and guest
+          seminars on wildlife protection. Through these efforts, the Biosphere Club has become a hub for nature lovers and eco-enthusiasts.
           </p>
         </div>
         <div className="flex-1">
