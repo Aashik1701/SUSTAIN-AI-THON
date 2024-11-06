@@ -1,7 +1,8 @@
+import RegisterButton from "../Register/RegisterButton";
 
 const Navbar = () => {
   return (
-    <nav className="p-4 bg-gray-800 text-white flex justify-between">
+    <nav className="p-4 outline text-white flex justify-between">
       <div className="logo">LOGO</div>
       <div className="links flex space-x-4">
         <a href="#home">Home</a>
@@ -10,6 +11,7 @@ const Navbar = () => {
         <a href="#sponsors">Sponsors</a>
         <a href="#core-team">Core Team</a>
         <a href="#contact">Contact</a>
+        <RegisterButton />
       </div>
     </nav>
   );
