@@ -9,20 +9,19 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="p-4 outline-dashed outline-8 align-middle items-center outline-offset-8 outline-green-600 text-white flex justify-between">
+    <nav className="p-3 bg-black outline-dashed outline-8 align-middle items-center outline-offset-8 outline-green-600 text-white flex justify-between">
       <div className="logo">LOGO</div>
-      <div className="hidden md:flex links space-x-4 items-center align-middle">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#themes">Themes</a>
-        <a href="#sponsors">Sponsors</a>
-        <a href="#core-team">Core Team</a>
-        <a href="#contact">Contact</a>
+      <div className="hidden md:flex links space-x-10 items-center align-middle">
+        <a href="#home" className="hover:text-green-400 transition-colors duration-300 focus:underline">Home</a>
+        <a href="#about" className="hover:text-green-400 transition-colors duration-300 focus:underline">About</a>
+        <a href="#themes" className="hover:text-green-400 transition-colors duration-300 focus:underline">Themes</a>
+        <a href="#sponsors" className="hover:text-green-400 transition-colors duration-300 focus:underline">Sponsors</a>
+        <a href="#core-team" className="hover:text-green-400 transition-colors duration-300 focus:underline">Core Team</a>
+        <a href="#contact" className="hover:text-green-400 transition-colors duration-300 focus:underline">Contact</a>
         <RegisterButton />
       </div>
       <div className="md:hidden flex items-center">
-        <button onClick={toggleMenu} className="text-white focus:outline-none">
-          {/* Hamburger Icon */}
+        <button onClick={toggleMenu} className="text-white focus:outline-none hover:text-green-400">
           <svg
             className="w-6 h-6"
             fill="none"
@@ -37,12 +36,12 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="absolute top-16 left-0 w-full bg-black text-white flex flex-col items-center md:hidden">
-          <a href="#home" className="p-2">Home</a>
-          <a href="#about" className="p-2">About</a>
-          <a href="#themes" className="p-2">Themes</a>
-          <a href="#sponsors" className="p-2">Sponsors</a>
-          <a href="#core-team" className="p-2">Core Team</a>
-          <a href="#contact" className="p-2">Contact</a>
+          <a href="#home" className="p-2 hover:text-green-400 transition-colors duration-300 focus:underline">Home</a>
+          <a href="#about" className="p-2 hover:text-green-400 transition-colors duration-300 focus:underline">About</a>
+          <a href="#themes" className="p-2 hover:text-green-400 transition-colors duration-300 focus:underline">Themes</a>
+          <a href="#sponsors" className="p-2 hover:text-green-400 transition-colors duration-300 focus:underline">Sponsors</a>
+          <a href="#core-team" className="p-2 hover:text-green-400 transition-colors duration-300 focus:underline">Core Team</a>
+          <a href="#contact" className="p-2 hover:text-green-400 transition-colors duration-300 focus:underline">Contact</a>
           <RegisterButton />
         </div>
       )}
