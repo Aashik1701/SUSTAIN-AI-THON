@@ -12,8 +12,14 @@ const About = () => {
         <div className="flex-1 text-right">
           <h2 className="text-4xl font-bold text-white mb-4">AIC Club</h2>
           <p className="text-white">
-            The AIC Club is dedicated to advancing interests in arts, culture, and innovation. 
-            We engage students in various activities that foster creativity and community.
+          The Artificial Intelligence Club at VIT Chennai is a dynamic community of tech enthusiasts, aspiring data scientists, and innovators passionate about Artificial
+          Intelligence, Machine Learning, and Data Science. Renowned for its engaging hackathons, coding challenges, and hands-on workshops led by industry experts and alumni, the club offers students an immersive platform
+          to explore and create impactful AI solutions.
+          Members gain valuable technical skills,
+          mentorship, and networking opportunities,
+          equipping them with the tools and experience
+          needed for successful careers and influential
+          projects in the rapidly evolving AI landscape.
           </p>
         </div>
       </div>
