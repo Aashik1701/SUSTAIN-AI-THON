@@ -2,7 +2,7 @@
 
 const About = () => {
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col h-screen p-16">
         <h1 className="text-4xl font-bold text-center p-8 text-white">About</h1>
       {/* AIC Club Section */}
       <div className="flex flex-1 items-center justify-between p-8">
@@ -31,7 +31,7 @@ const About = () => {
           seminars on wildlife protection. Through these efforts, the Biosphere Club has become a hub for nature lovers and eco-enthusiasts.
           </p>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 flex justify-end">
           <img src="/path/to/biosphere-logo.png" alt="Biosphere Club Logo" className="w-40 h-40 rounded-full bg-white" />
         </div>
       </div>
