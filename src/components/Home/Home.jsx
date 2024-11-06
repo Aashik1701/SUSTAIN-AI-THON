@@ -2,13 +2,13 @@ import RegisterButton from "../Register/RegisterButton";
 import "./Home.css";
 const Home = () => {
   return (
-    <div className="h-screen flex items-center justify-center bg-black text-white font-bold">
-      <div className="flex flex-col items-center justify-center gap-10 relative">
+    <div className="h-screen flex items-center justify-center bg-black text-white font-bold ">
+      <div className="flex flex-col items-center justify-center gap-10 relative ">
         {/* Glowing Circle */}
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="glowing-circle"></div>
         </div>
-        <div className="relative z-10">
+        <div className="relative z-10 text-center">
           <h1 className="text-8xl font-extrabold font-sans tracking-wide">CODE</h1>
           <h2 className="text-8xl font-light tracking-wide text-green-500">GREEN</h2>
         </div>
@@ -17,5 +17,5 @@ const Home = () => {
     </div>
   );
 };
-
+//inset-0 bg-gradient-to-b from-green-300 via-black to-green-200 opacity-20 blur-lg
 export default Home;
