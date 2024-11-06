@@ -9,9 +9,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="p-4 outline-dashed outline-2 align-middle items-center outline-offset-2 text-white flex justify-between">
+    <nav className="p-4 outline-dashed outline-8 align-middle items-center outline-offset-8 outline-green-600 text-white flex justify-between">
       <div className="logo">LOGO</div>
-      <div className="hidden md:flex links space-x-4 items-center">
+      <div className="hidden md:flex links space-x-4 items-center align-middle">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#themes">Themes</a>

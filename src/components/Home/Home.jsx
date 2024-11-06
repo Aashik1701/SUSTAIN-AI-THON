@@ -8,14 +8,15 @@ const Home = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="glowing-circle"></div>
         </div>
-        <div className="relative z-10 text-center">
+        <div className="relative z-10 text-center p-8">
           <h1 className="text-8xl font-extrabold font-sans tracking-wide">CODE</h1>
           <h2 className="text-8xl font-light tracking-wide text-green-500">GREEN</h2>
+          <RegisterButton />
         </div>
-        <RegisterButton />
+        
       </div>
     </div>
   );
 };
-//inset-0 bg-gradient-to-b from-green-300 via-black to-green-200 opacity-20 blur-lg
+//
 export default Home;
