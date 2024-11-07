@@ -4,20 +4,23 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Themes from "./components/Themes/Themes";
 import Sponsors from "./components/Sponsors/Sponsors";
+import Location from "./components/Location/Location"
 import Rounds from "./components/Rounds/Rounds";
 import CoreTeam from "./components/CoreTeam/CoreTeam";
 import Footer from "./components/Footer/Footer";
 import Faq from "./components/FAQ/Faq";
+import "./App.css"
 
 function App() {
   return (
     <div>
       <Navbar />
       <Home />
-      <About />
+      {/* <About /> */}
       <Themes />
       <Sponsors />
       <Rounds />
+      <Location/>
       <CoreTeam />
       <Faq />
       <Footer />
