@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark-bg {
+  background-color: rgba(2, 10, 12, 1);
+}
+
+.yellow-ellipse-bg {
+  background-color: #bfd8345c;
+}
+.green-ellipse-bg {
+  background-color: #01987580;
+}
+
+.custom-font {
+  font-family: "Julius Sans One", sans-serif;
+}
+
+.about-font-color {
+  color: #00aead;
+}
