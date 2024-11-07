@@ -14,8 +14,8 @@ const Home = () => {
           <div className="glowing-circle"></div>
         </div>
         <div className="relative z-10 text-center p-8">
-          <h1 className="text-8xl font-extrabold font-sans tracking-wide">Sustain-Ai-Thon</h1>
-          <h2 className="text-8xl font-light tracking-wide text-green-500">2024</h2>
+          <h1 className="text-8xl font-extrabold font-sans tracking-wide">CODE</h1>
+          <h2 className="text-8xl font-light tracking-wide text-green-500">GREEN</h2>
           <RegisterButton />
         </div>
       </div>
