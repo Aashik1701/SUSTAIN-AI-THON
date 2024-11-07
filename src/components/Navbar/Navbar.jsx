@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="p-3 bg-black outline-dashed outline-8 align-middle items-center outline-offset-8 outline-green-600 text-white flex justify-between">
+    <nav className="p-3 bg-black outline-dashed outline-8 align-middle items-center outline-offset-8 text-white flex justify-between">
       <div className="logo">LOGO</div>
       <div className="hidden md:flex links space-x-10 items-center align-middle">
         <a href="#home" className="hover:text-green-400 transition-colors duration-300 focus:underline">Home</a>
