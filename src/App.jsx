@@ -14,7 +14,6 @@ function App() {
     <div>
       <Navbar />
       <Home />
-
       <About />
       <Themes />
       <Sponsors />

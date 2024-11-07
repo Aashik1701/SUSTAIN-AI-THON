@@ -1,4 +1,4 @@
-import React from "react";
+
 import Accordion from "./Accordion";
 import FaqBG from "./FaqBG";
 import "./Faq.css";
