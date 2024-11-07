@@ -1,7 +1,7 @@
 
 import AboutBG from "./AboutBG";
-import image from "../../assets/image.jpg";
-
+import BioSphereLogo from "../../assets/BioSphere.png";
+import AicLogo from "../../assets/AicLogo.png";
 const About = () => {
   const content = [
     "The Artificial Intelligence Club at VIT Chennai is a dynamic community of tech enthusiasts, aspiring data scientists, and innovators passionate about Artificial Intelligence, Machine Learning, and Data Science. Renowned for its engaging hackathons, coding challenges, and hands-on workshops led by industry experts and alumni, the club offers students an immersive platform to explore and create impactful AI solutions. Members gain valuable technical skills, mentorship, and networking opportunities, equipping them with the tools and experience needed for successful careers and influential projects in the rapidly evolving AI landscape.",
@@ -19,7 +19,7 @@ const About = () => {
             <div className="flex flex-col items-center justify-between gap-5 lg:gap-20 lg:flex-row">
               <img
                 className="h-[150px] sm:h-[350px] rounded-full"
-                src={image}
+                src={AicLogo}
                 alt=""
               />
               <div>
@@ -42,7 +42,7 @@ const About = () => {
               </div>
               <img
                 className="h-[150px] sm:h-[350px] rounded-full"
-                src={image}
+                src={BioSphereLogo}
                 alt=""
               />
             </div>
