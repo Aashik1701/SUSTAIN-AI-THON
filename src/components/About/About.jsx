@@ -10,7 +10,7 @@ const About = () => {
         <img src="/path/to/aic-logo.png" alt="AIC Club Logo" className="w-40 h-40 rounded-full bg-white transform transition-transform duration-500 hover:scale-110" />
       </div>
       <div className="flex-1 text-right">
-        <h2 className="text-4xl font-bold text-white mb-4">AIC Club</h2>
+        <h2 className="text-4xl font-bold text-white mb-4">AI Club</h2>
         <p className="text-white">
         The Artificial Intelligence Club at VIT Chennai is a dynamic community of tech enthusiasts, aspiring data scientists, and innovators passionate about Artificial
         Intelligence, Machine Learning, and Data Science. Renowned for its engaging hackathons, coding challenges, and hands-on workshops led by industry experts and alumni, the club offers students an immersive platform
@@ -32,7 +32,7 @@ const About = () => {
         </p>
       </div>
       <div className="flex-1 flex justify-end">
-        <img src="src/assets/BioSphere.png" alt="Biosphere Club Logo" className=" w-40 h-40 rounded-full bg-white transform transition-transform duration-500 hover:scale-110" />
+        <img src="src/assets/BioSphere.png" alt="Biosphere Club Logo" className=" w-40 h-40 rounded-full bg-black transform transition-transform duration-500 hover:scale-110" />
       </div>
       </div>
     </div>
