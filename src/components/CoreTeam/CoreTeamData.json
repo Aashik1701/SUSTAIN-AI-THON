@@ -1,0 +1,26 @@
+[
+    {
+      "name": "Aashik",
+      "image": "https://example.com/image1.jpg"
+    },
+    {
+      "name": "John Doe",
+      "image": "https://example.com/image2.jpg"
+    },
+    {
+      "name": "Jane Smith",
+      "image": "https://example.com/image3.jpg"
+    },
+    {
+      "name": "Alice Johnson",
+      "image": "https://example.com/image4.jpg"
+    },
+    {
+      "name": "Bob Brown",
+      "image": "https://example.com/image5.jpg"
+    },
+    {
+      "name": "Charlie Davis",
+      "image": "https://example.com/image6.jpg"
+    }
+  ]

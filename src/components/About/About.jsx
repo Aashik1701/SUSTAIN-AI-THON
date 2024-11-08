@@ -1,5 +1,5 @@
-import BioSphereLogo from "../../assets/BioSphere.png";
-import AicLogo from "../../assets/AicLogo.png";
+import BioSphereLogo from "../../assets/Logo/BioSphere.png";
+import AicLogo from "../../assets/Logo/AicLogo.png";
 
 const About = () => {
   const styles = {
