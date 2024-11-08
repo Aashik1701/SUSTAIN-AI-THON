@@ -1,26 +1,38 @@
-[
+  [
     {
       "name": "Aashik",
-      "image": "../../assets/Logo/BioSphere.png"
+      "image": "https://example.com/image1.jpg",
+      "linkedin": "https://www.linkedin.com/in/mohammed-aashik-f-690418263",
+      "instagram": "https://www.instagram.com/_ashik_1701_"
     },
     {
-      "name": "John Doe",
-      "image": "https://example.com/image2.jpg"
+      "name": "Melvin",
+      "image": "https://example.com/image2.jpg",
+      "linkedin": "https://www.linkedin.com/in/johndoe",
+      "instagram": "https://www.instagram.com/johndoe"
     },
     {
       "name": "Jane Smith",
-      "image": "https://example.com/image3.jpg"
+      "image": "https://example.com/image3.jpg",
+      "linkedin": "https://www.linkedin.com/in/janesmith",
+      "instagram": "https://www.instagram.com/janesmith"
     },
     {
       "name": "Alice Johnson",
-      "image": "https://example.com/image4.jpg"
+      "image": "https://example.com/image4.jpg",
+      "linkedin": "https://www.linkedin.com/in/alicejohnson",
+      "instagram": "https://www.instagram.com/alicejohnson"
     },
     {
       "name": "Bob Brown",
-      "image": "https://example.com/image5.jpg"
+      "image": "https://example.com/image5.jpg",
+      "linkedin": "https://www.linkedin.com/in/bobbrown",
+      "instagram": "https://www.instagram.com/bobbrown"
     },
     {
       "name": "Charlie Davis",
-      "image": "https://example.com/image6.jpg"
+      "image": "https://example.com/image6.jpg",
+      "linkedin": "https://www.linkedin.com/in/charliedavis",
+      "instagram": "https://www.instagram.com/charliedavis"
     }
   ]
