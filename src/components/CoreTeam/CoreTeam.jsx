@@ -30,7 +30,7 @@ const CoreTeam = () => {
           WORKING COMMITTEE
         </div>
         <div className="flex flex-col">
-          <div className="flex flex-wrap justify-center gap-4 mb-4 lg:gap-10 lg:mb-10">
+          <div className="flex flex-wrap justify-center gap-3 mb-3 lg:gap-8 lg:mb-8">
             {CoreTeamData.slice(2, 6).map((member, index) => (
               <Card 
                 key={index} 
