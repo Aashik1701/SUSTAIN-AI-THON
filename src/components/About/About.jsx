@@ -26,7 +26,7 @@ const About = () => {
             />
             <div>
               <div className="mb-2 text-4xl font-semibold text-center text-white lg:text-left">
-                AI Club
+                Artificail Intelligence Club
               </div>
               <div className="mb-10 text-xl leading-8 text-center text-white lg:mb-0 lg:text-left">
                 {content[0]}
@@ -36,7 +36,7 @@ const About = () => {
           <div className="flex flex-col-reverse items-center justify-between gap-10 lg:gap-20 lg:flex-row">
             <div>
               <div className="mb-2 text-4xl font-semibold text-center text-white lg:text-right">
-                Biosphere Club
+                Biosphere
               </div>
               <div className="text-xl leading-8 text-center text-white lg:text-right">
                 {content[1]}
