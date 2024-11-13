@@ -8,16 +8,25 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  // Function to handle smooth scrolling
+  const handleScrollTo = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsOpen(false); // Close the mobile menu after clicking
+  };
+
   return (
     <nav className="p-3 bg-black outline-dashed outline-8 align-middle items-center outline-offset-8 text-white flex justify-between">
       <div className="logo">LOGO</div>
       <div className="hidden md:flex links space-x-10 items-center align-middle">
-        <a href="#home" className="hover:text-green-400 transition-colors duration-300 focus:underline">Home</a>
-        <a href="#about" className="hover:text-green-400 transition-colors duration-300 focus:underline">About</a>
-        <a href="#themes" className="hover:text-green-400 transition-colors duration-300 focus:underline">Themes</a>
-        <a href="#sponsors" className="hover:text-green-400 transition-colors duration-300 focus:underline">Sponsors</a>
-        <a href="#core-team" className="hover:text-green-400 transition-colors duration-300 focus:underline">Core Team</a>
-        <a href="#contact" className="hover:text-green-400 transition-colors duration-300 focus:underline">Contact</a>
+        <a href="#home" onClick={() => handleScrollTo('home')} className="hover:text-green-400 transition-colors duration-300 focus:underline">Home</a>
+        <a href="#about" onClick={() => handleScrollTo('about')} className="hover:text-green-400 transition-colors duration-300 focus:underline">About</a>
+        <a href="#themes" onClick={() => handleScrollTo('themes')} className="hover:text-green-400 transition-colors duration-300 focus:underline">Themes</a>
+        <a href="#sponsors" onClick={() => handleScrollTo('sponsors')} className="hover:text-green-400 transition-colors duration-300 focus:underline">Sponsors</a>
+        <a href="#core-team" onClick={() => handleScrollTo('core-team')} className="hover:text-green-400 transition-colors duration-300 focus:underline">Core Team</a>
+        <a href="#contact" onClick={() => handleScrollTo('contact')} className="hover:text-green-400 transition-colors duration-300 focus:underline">Contact</a>
         <RegisterButton />
       </div>
       <div className="md:hidden flex items-center">
@@ -36,12 +45,12 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="absolute top-16 left-0 w-full bg-black text-white flex flex-col items-center md:hidden">
-          <a href="#home" className="p-2 hover:text-green-400 transition-colors duration-300 focus:underline">Home</a>
-          <a href="#about" className="p-2 hover:text-green-400 transition-colors duration-300 focus:underline">About</a>
-          <a href="#themes" className="p-2 hover:text-green-400 transition-colors duration-300 focus:underline">Themes</a>
-          <a href="#sponsors" className="p-2 hover:text-green-400 transition-colors duration-300 focus:underline">Sponsors</a>
-          <a href="#core-team" className="p-2 hover:text-green-400 transition-colors duration-300 focus:underline">Core Team</a>
-          <a href="#contact" className="p-2 hover:text-green-400 transition-colors duration-300 focus:underline">Contact</a>
+          <a href="#home" onClick={() => handleScrollTo('home')} className="p-2 hover:text-green-400 transition-colors duration-300 focus:underline">Home</a>
+          <a href="#about" onClick={() => handleScrollTo('about')} className="p-2 hover:text-green-400 transition-colors duration-300 focus:underline">About</a>
+          <a href="#themes" onClick={() => handleScrollTo('themes')} className="p-2 hover:text-green-400 transition-colors duration-300 focus:underline">Themes</a>
+          <a href="#sponsors" onClick={() => handleScrollTo('sponsors')} className="p-2 hover:text-green-400 transition-colors duration-300 focus:underline">Sponsors</a>
+          <a href="#core-team" onClick={() => handleScrollTo('core-team')} className="p-2 hover:text-green-400 transition-colors duration-300 focus:underline">Core Team</a>
+          <a href="#contact" onClick={() => handleScrollTo('contact')} className="p-2 hover:text-green-400 transition-colors duration-300 focus:underline">Contact</a>
           <RegisterButton />
         </div>
       )}
