@@ -1,8 +1,8 @@
+import { motion } from 'framer-motion';
 import Card from "./Card";
- // This can be a placeholder or a different image
-import theme1 from "../../assets/Themes/MentalHealth.png"; // Replace with the actual path to the theme 1 image
-import theme2 from "../../assets/Themes/economic.png"; // Replace with the actual path to the theme 2 image
-import theme3 from "../../assets/Themes/sustainablity.png"; // Replace with the actual path to the theme 3 image
+import theme1 from "../../assets/Themes/MentalHealth.png"; 
+import theme2 from "../../assets/Themes/economic.png"; 
+import theme3 from "../../assets/Themes/sustainablity.png"; 
 
 const Themes = () => {
   const themes = [
@@ -16,7 +16,7 @@ const Themes = () => {
         "Goal 10: Reduced Inequalities",
         "Goal 16: Peace, Justice, and Strong Institutions"
       ],
-      img: theme1, // Added image for theme 1
+      img: theme1, 
     },
     {
       title: "Economic Growth and Innovation",
@@ -27,7 +27,7 @@ const Themes = () => {
         "Goal 11: Sustainable Cities and Communities",
         "Goal 12: Responsible Consumption and Production"
       ],
-      img: theme2, // Added image for theme 2
+      img: theme2, 
     },
     {
       title: "Environmental Sustainability",
@@ -39,7 +39,7 @@ const Themes = () => {
         "Goal 14: Life Below Water",
         "Goal 15: Life on Land"
       ],
-      img: theme3, // Added image for theme 3
+      img: theme3, 
     },
   ];
 
@@ -48,13 +48,19 @@ const Themes = () => {
       <h1 className="julius-sans-one-regular text-6xl md:text-5xl lg:text-6xl text-[#00AEAD] tracking-wider">THEMES</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-10">
         {themes.map((theme, index) => (
-          <Card 
+          <motion.div 
             key={index} 
-            img={theme.img} // Pass the theme image to the Card component
-            theme={theme.title} 
-            description={theme.description} 
-            goals={theme.goals} 
-          />
+            initial={{ opacity: 0, y: 20 }} 
+            animate={{ opacity: 1, y: 0 }} 
+            transition={{ duration: 0.5, delay: index * 0.1 }} // Delay based on index for staggered effect
+          >
+            <Card 
+              img={theme.img} 
+              theme={theme.title} 
+              description={theme.description} 
+              goals={theme.goals} 
+            />
+          </motion.div>
         ))}
       </div>
     </section>
