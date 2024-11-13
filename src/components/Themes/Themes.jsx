@@ -1,5 +1,8 @@
-import Card from "./Card.jsx";
-import Checker from "../../assets/checker.png";
+import Card from "./Card";
+ // This can be a placeholder or a different image
+import theme1 from "../../assets/Themes/MentalHealth.png"; // Replace with the actual path to the theme 1 image
+import theme2 from "../../assets/Themes/economic.png"; // Replace with the actual path to the theme 2 image
+import theme3 from "../../assets/Themes/sustainablity.png"; // Replace with the actual path to the theme 3 image
 
 const Themes = () => {
   const themes = [
@@ -13,6 +16,7 @@ const Themes = () => {
         "Goal 10: Reduced Inequalities",
         "Goal 16: Peace, Justice, and Strong Institutions"
       ],
+      img: theme1, // Added image for theme 1
     },
     {
       title: "Economic Growth and Innovation",
@@ -23,6 +27,7 @@ const Themes = () => {
         "Goal 11: Sustainable Cities and Communities",
         "Goal 12: Responsible Consumption and Production"
       ],
+      img: theme2, // Added image for theme 2
     },
     {
       title: "Environmental Sustainability",
@@ -34,6 +39,7 @@ const Themes = () => {
         "Goal 14: Life Below Water",
         "Goal 15: Life on Land"
       ],
+      img: theme3, // Added image for theme 3
     },
   ];
 
@@ -44,7 +50,7 @@ const Themes = () => {
         {themes.map((theme, index) => (
           <Card 
             key={index} 
-            img={Checker} 
+            img={theme.img} // Pass the theme image to the Card component
             theme={theme.title} 
             description={theme.description} 
             goals={theme.goals} 
