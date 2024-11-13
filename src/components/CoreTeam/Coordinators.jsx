@@ -4,7 +4,7 @@ import Card from "./Card";
 import CoreTeamData from "./CoreTeamData.json"; // Adjust the path as necessary
 import "./CoreTeam.css";
 
-const CoreTeam = () => {
+const Coordinators = () => {
   const style = {
     backgroundColor: "#0A100E",
   };
@@ -58,4 +58,4 @@ const CoreTeam = () => {
   );
 };
 
-export default CoreTeam;
+export default Coordinators;

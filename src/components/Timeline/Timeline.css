@@ -1,0 +1,24 @@
+.timeline-container {
+    position: relative;
+   }
+  
+  .timeline-item {
+    position: relative;
+    padding-left: 40px; /* Space for the date */
+  }
+  
+  .timeline-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 20px; /* Adjust as needed */
+    height: calc(100% + 20px); /* Extend line to the next item */
+    width: 2px; /* Line thickness */
+    background-color: white; /* Line color */
+    z-index: -1; /* Behind the content */
+  }
+  
+  .timeline-date {
+    position: relative;
+    z-index: 1; /* Above the line */
+  }
