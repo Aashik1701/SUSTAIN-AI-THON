@@ -1,4 +1,5 @@
 import cittaLogo from "../../assets/Sponsors/Citta.png"; // Updated logo path
+import PyramidLoader from "./PyraidLoader";
 import problemStatement from "/src/assets/CittaProblemStatement.pdf/"; // Updated problem statement path
 
 const Sponsors = () => {
@@ -30,23 +31,8 @@ const Sponsors = () => {
         {/* Second Box with Dummy Values */}
         <div className="relative flex flex-col items-center justify-center w-[90%] lg:w-[80%] border-[1px] border-[#72CC5080] rounded-[32px] p-5 md:p-10">
           <div className="absolute inset-0 w-full h-full rounded-[32px] bg-sponsors bg-cover bg-center opacity-20"></div>
-
-          <div className="flex flex-col items-center justify-center z-[10] text-white">
-            <div className="max-h-[220px] rounded-lg bg-gray-500 flex items-center justify-center">
-              <span className="text-white text-xl">Dummy Logo</span>
-            </div>
-            <h2 className="inter-semibold text-2xl align-middle uppercase tracking-wide">Dummy Sponsor</h2>
-            <p className="inter-semibold text-sm lg:text-md sm:text-md max-w-[500px] text-wrap text-center">
-              Sponsors details: This is a dummy sponsor description. Replace it with actual information.
-            </p>
-            <h1 className="inter-semibold text-xl md:text-2xl lg:text-3xl mt-5">Problem Statement:</h1>
-            <a 
-              href="#" 
-              className="bg-blue-700 text-white py-2 px-4 rounded-lg hover:bg-blue-400 transition-colors mt-2"
-            >
-              Download Problem Statement
-            </a>
-          </div>  
+          <PyramidLoader />
+          <h2 className="text-white inter-semibold text-2xl align-middle uppercase tracking-wide">To be revealed soon</h2>
         </div>
       </div>
     </section>
