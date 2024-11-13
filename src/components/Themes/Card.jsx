@@ -1,16 +1,16 @@
-
-
-const Card = ({img,theme}) => {
+const Card = ({ img, theme, description, goals }) => {
   return (
-    <div className='flex flex-col align-middle justify-center max-w-[446px] border-2 border-white rounded-lg'>
-        <div className='w-full h-[492px] rounded-[32px]'>
-            <img src={img} className='w-full h-full'/>
-        </div>
-        <div className='flex align-middle justify-center'>
-            <h3 className='inter-semibold text-xl uppercase'>{theme}</h3>
-        </div>
+    <div className="bg-[#00AEAD] rounded-lg p-5 flex flex-col">
+      <img src={img} alt={theme} className="rounded-lg mb-4" />
+      <h2 className="text-xl font-bold mb-2">{theme}</h2>
+      <p className="mb-2">{description}</p>
+      <ul className="list-disc pl-5">
+        {goals.map((goal, index) => (
+          <li key={index} className="text-sm">{goal}</li>
+        ))}
+      </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;
