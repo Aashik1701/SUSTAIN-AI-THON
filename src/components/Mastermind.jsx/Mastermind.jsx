@@ -3,6 +3,20 @@ import { Linkedin, Instagram } from 'lucide-react';
 
 const teamMembers = [
   {
+    name: 'Mohammed Aashik',
+    role: 'Student Coordinator',
+    image: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731605118/sustain-ai-thon/qcb3avev6plhdxcgv8ec.jpg",
+    linkedin: 'https://www.linkedin.com/in/mohammed-aashik-f-690418263/',
+    instagram: 'https://www.instagram.com/_ashik_1701_/'
+  },
+  {
+    name: 'Melvin',
+    role: 'Student Coordinator',
+    image: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731605119/sustain-ai-thon/j9qavwdhsk8zj25vifps.jpg",
+    linkedin: 'https://www.linkedin.com/in/melvin-b-88281626a/',
+    instagram: 'https://www.instagram.com/_mr.redwing_/'
+  },
+  {
     name: 'DR. Dhavakumar P',
     role: 'AIC Faculty Coordinator',
     image: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731605118/sustain-ai-thon/lz391hso3i4mc3qi9ca2.jpg",
@@ -21,20 +35,7 @@ const teamMembers = [
     image: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731605118/sustain-ai-thon/nqubjyiqlrxxnrop4g7z.jpg",
     linkedin: 'https://www.linkedin.com/in/umayal-chandrahasan-15b4b7b7/'
   },
-  {
-    name: 'Mohammed Aashik',
-    role: 'Student Coordinator',
-    image: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731605118/sustain-ai-thon/qcb3avev6plhdxcgv8ec.jpg",
-    linkedin: 'https://www.linkedin.com/in/mohammed-aashik-f-690418263/',
-    instagram: 'https://www.instagram.com/_ashik_1701_/'
-  },
-  {
-    name: 'Melvin',
-    role: 'Student Coordinator',
-    image: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731605119/sustain-ai-thon/j9qavwdhsk8zj25vifps.jpg",
-    linkedin: 'https://www.linkedin.com/in/melvin-b-88281626a/',
-    instagram: 'https://www.instagram.com/_mr.redwing_/'
-  }
+  
 ];
 
 const Mastermind = () => {
@@ -134,12 +135,7 @@ const Mastermind = () => {
 
             {/* View More Button */}
             <div className="mt-8 text-center">
-              <button 
-                onClick={() => window.location.href = '/CoreTeam'}
-                className="px-8 py-3 rounded-full bg-gradient-to-r from-blue-500 to-green-500 text-white font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300"
-              >
-                VIEW MORE
-              </button>
+              
             </div>
           </div>
         </div>
