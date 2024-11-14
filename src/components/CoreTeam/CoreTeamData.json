@@ -7,9 +7,9 @@
     },
     {
       "name": "Melvin",
-      "image": "https://example.com/image2.jpg",
-      "linkedin": "https://www.linkedin.com/in/johndoe",
-      "instagram": "https://www.instagram.com/johndoe"
+      "image": "/src/assets/Core/melvin.jpg",
+      "linkedin": "https://www.linkedin.com/in/melvin-b-88281626a/",
+      "instagram": "https://www.instagram.com/_mr.redwing_/"
     },
     {
       "name": "Jane Smith",

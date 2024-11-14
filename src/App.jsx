@@ -11,7 +11,7 @@ import Faq from "./components/FAQ/Faq";
 import BackgroundVideo from "./components/BackgroundVideo/BackgroundVideo";
 import "./App.css"
 import Timeline from "./components/Timeline/Timeline";
-import Coordinators from "./components/CoreTeam/Coordinators";
+//import Coordinators from "./components/CoreTeam/Coordinators";
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
       <Timeline />
       <Rounds />
       <Location/>
-      <Coordinators />
+      
       <Faq />
       <Footer />
     </div>
