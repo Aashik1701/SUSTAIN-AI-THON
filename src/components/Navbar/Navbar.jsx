@@ -27,6 +27,7 @@ const Navbar = () => {
         <a href="#themes" onClick={() => handleScrollTo('themes')} className="hover:text-green-400 transition-colors duration-300 focus:underline">Themes</a>
         <a href="#sponsors" onClick={() => handleScrollTo('sponsors')} className="hover:text-green-400 transition-colors duration-300 focus:underline">Sponsors</a>
         <a href="#core-team" onClick={() => handleScrollTo('core-team')} className="hover:text-green-400 transition-colors duration-300 focus:underline">Core Team</a>
+        <a href="#contact" onClick={() => handleScrollTo('gallery')} className="hover:text-green-400 transition-colors duration-300 focus:underline">Gallery</a>
         <a href="#contact" onClick={() => handleScrollTo('contact')} className="hover:text-green-400 transition-colors duration-300 focus:underline">Contact</a>
         <RegisterButton />
       </div>
