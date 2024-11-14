@@ -5,7 +5,7 @@ const teamMembers = [
   {
     name: 'DR. Dhavakumar P',
     role: 'AIC Faculty Coordinator',
-    image: '/assets/Core/Aic2.jpg',
+    image: 'src/assets/Core/Aic2.jpg',
     linkedin: 'https://www.linkedin.com/in/dhavakumar-p-408907250/'
     
   },
