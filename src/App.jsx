@@ -12,7 +12,7 @@ import Faq from "./components/FAQ/Faq";
 import "./App.css";
 import Timeline from "./components/Timeline/Timeline";
 import Coordinators from "./components/CoreTeam/Coordinators";
-
+import Gallery from "./components/Gallery/Gallery";
 function App() {
   return (
     <div>
@@ -25,6 +25,7 @@ function App() {
       <div id="rounds"><Rounds /></div>
       <div id="timeline"><Timeline /></div>
       <div id="location"><Location /></div>
+      <div id="gallery"><Gallery /></div>
       <div id="core-team"><Coordinators /></div>
       <div id="faq"><Faq /></div>
       <Footer />
