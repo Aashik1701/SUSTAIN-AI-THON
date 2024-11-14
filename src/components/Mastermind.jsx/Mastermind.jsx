@@ -23,14 +23,14 @@ const teamMembers = [
   },
   {
     name: 'Mohammed Aashik',
-    role: 'Event Coordinator',
+    role: 'Student Coordinator',
     image: '/src/assets/Core/aashik.jpeg',
     linkedin: 'https://www.linkedin.com/in/mohammed-aashik-f-690418263/',
     instagram: 'https://www.instagram.com/_ashik_1701_/'
   },
   {
     name: 'Melvin',
-    role: 'Event Coordinator',
+    role: 'Student Coordinator',
     image: '/src/assets/Core/melvin.jpg',
     linkedin: 'https://www.linkedin.com/in/melvin-b-88281626a/',
     instagram: 'https://www.instagram.com/_mr.redwing_/'
