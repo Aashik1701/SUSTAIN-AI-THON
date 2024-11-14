@@ -1,34 +1,31 @@
 import { useState, useEffect } from 'react';
-import gone from '../../assets/Core/gallery/g1.jpeg';
-import gtwo from '../../assets/Core/gallery/gtwo.jpg';
-import gthree from '../../assets/Core/gallery/gthree.png';
-import aicgroup from '../../assets/Core/gallery/aicgroup.jpeg';
+
 const Gallery = () => {
   const images = [
     {
-      url: gone,
+      url: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731605313/sustain-ai-thon/ixpuh0mrjegarfme8xlh.jpg",
       alt: "Hackathon Team Working",
-      thumbnail: gone
+      thumbnail: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731605313/sustain-ai-thon/ixpuh0mrjegarfme8xlh.jpg"
     },
     {
-      url: gtwo,
+      url: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731605293/sustain-ai-thon/doiretqokleqsuitdu9t.png",
       alt: "Presentation Session",
-      thumbnail: gtwo
+      thumbnail: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731605293/sustain-ai-thon/doiretqokleqsuitdu9t.png"
     },
     {
-      url: gthree,
+      url: "",
       alt: "Workshop Session",
-      thumbnail: gthree
+      thumbnail: ""
     },
     {
-      url: aicgroup,
+      url: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731605348/sustain-ai-thon/tkhvivbmbivlpa6uyuid.jpg",
       alt: "Team Discussion",
-      thumbnail: aicgroup
+      thumbnail: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731605348/sustain-ai-thon/tkhvivbmbivlpa6uyuid.jpg"
     },
     {
-      url: gone,
+      url: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731605292/sustain-ai-thon/mogpm5beazirlsjoorob.jpg",
       alt: "Project Development",
-      thumbnail: gone
+      thumbnail: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731605292/sustain-ai-thon/mogpm5beazirlsjoorob.jpg"
     }
   ];
 

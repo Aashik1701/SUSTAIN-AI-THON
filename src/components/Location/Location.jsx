@@ -1,5 +1,5 @@
 // Location.jsx
-import vitchennai from '../../assets/Logo/VIT.png';
+
 const Location = () => {
   return (
     <section id="Location" className="flex flex-col items-center justify-center gap-10 p-5 md:p-10">
@@ -22,7 +22,7 @@ const Location = () => {
           <h1 className='inter-semibold text-3xl text-white p-5 flex items-center justify-center tracking-widest'>Competition Venue</h1>
           <h1 className='inter-semibold text-2xl text-white p-5 flex items-center justify-center tracking-wider'>MG Auditorium</h1>
           <img 
-            src={vitchennai} // Replace with the actual path to your image
+            src="https://res.cloudinary.com/dvude7m7p/image/upload/v1731070506/sustain-ai-thon/xl22o9qwrfzvpgovbrlq.png" // Replace with the actual path to your image
             alt="MG Auditorium" 
             className="mt-4 w-full sm:w-[400px] md:w-[500px] lg:w-[600px] h-auto rounded-md shadow-lg" // Adjust classes as needed
           />
