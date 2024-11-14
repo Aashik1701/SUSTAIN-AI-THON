@@ -16,7 +16,7 @@ const Footer = () => {
             hover:text-green-500 transition-colors duration-300">
               Aashik
             </a> and  
-            <a href="https://www.linkedin.com/in/youruserid/" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-500 
+            <a href="https://www.linkedin.com/in/naveen-k-m-047b42288/" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-500 
             transition-colors duration-300"> Naveen</a>
           </p>
         </div>
