@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
-
+import gone from '../../assets/Core/gallery/g1.jpeg';
 const Gallery = () => {
   const images = [
     {
-      url: "src/assets/Core/gallery/g1.jpeg",
+      url: gone,
       alt: "Hackathon Team Working",
-      thumbnail: "src/assets/Core/gallery/g1.jpeg"
+      thumbnail: gone
     },
     {
       url: "/src/assets/Core/gallery/gtwo.jpg",
