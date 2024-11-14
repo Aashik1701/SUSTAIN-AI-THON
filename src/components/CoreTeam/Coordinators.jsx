@@ -10,7 +10,7 @@ const Coordinators = () => {
   };
 
   return (
-    <section id="core-team" className="p-8" style={style}>
+    <section id="core-team" className="p-8 bg-black" style={style}>
       <div className="flex flex-col items-center">
         <div className="px-3 py-3 text-3xl font-semibold text-center text-white bg-gray-400 bg-opacity-25 rounded-lg">
           EVENT COORDINATORS

@@ -8,17 +8,16 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-  // Function to handle smooth scrolling
   const handleScrollTo = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
-    setIsOpen(false); // Close the mobile menu after clicking
+    setIsOpen(false);
   };
 
   return (
-    <nav className="p-3 bg-black outline-dashed outline-8 align-middle items-center outline-offset-8 text-white flex justify-between">
+    <nav className="fixed top-0 left-0 right-0 p-3 bg-black outline-dashed outline-8 align-middle items-center outline-offset-8 text-white flex justify-between z-50">
       <div className="logo">LOGO</div>
       <div className="hidden md:flex links space-x-10 items-center align-middle">
         <a href="#home" onClick={() => handleScrollTo('home')} className="hover:text-green-400 transition-colors duration-300 focus:underline">Home</a>
@@ -42,7 +41,6 @@ const Navbar = () => {
           </svg>
         </button>
       </div>
-      {/* Mobile Menu */}
       {isOpen && (
         <div className="absolute top-16 left-0 w-full bg-black text-white flex flex-col items-center md:hidden">
           <a href="#home" onClick={() => handleScrollTo('home')} className="p-2 hover:text-green-400 transition-colors duration-300 focus:underline">Home</a>
