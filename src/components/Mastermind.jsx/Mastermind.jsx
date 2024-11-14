@@ -5,7 +5,7 @@ const teamMembers = [
   {
     name: 'DR. Dhavakumar P',
     role: 'AIC Faculty Coordinator',
-    image: '../../assets/Core/Aic2.jpg',
+    image: '/assets/Core/Aic2.jpg',
     linkedin: 'https://www.linkedin.com/in/dhavakumar-p-408907250/'
     
   },
@@ -89,7 +89,7 @@ const Mastermind = () => {
 
           {/* Right Box - Team Members Grid */}
           <div className="lg:w-1/2 p-6 rounded-2xl backdrop-blur-sm">
-            <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3  gap-6">
               {teamMembers.map((member) => (
                 <div
                   key={member.name}
