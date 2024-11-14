@@ -8,19 +8,19 @@ const Gallery = () => {
       thumbnail: "src/assets/Core/gallery/g1.jpeg"
     },
     {
-      url: "/api/placeholder/1200/600",
+      url: "/src/assets/Core/gallery/gtwo.jpg",
       alt: "Presentation Session",
-      thumbnail: "/api/placeholder/150/100"
+      thumbnail: "src/assets/Core/gallery/gtwo.jpg"
     },
     {
-      url: "/api/placeholder/1200/600",
+      url: "src/assets/Core/gallery/gthree.png",
       alt: "Workshop Session",
-      thumbnail: "/api/placeholder/150/100"
+      thumbnail: "src/assets/Core/gallery/gthree.png"
     },
     {
-      url: "/api/placeholder/1200/600",
+      url: "src/assets/Core/gallery/aicgroup.jpeg",
       alt: "Team Discussion",
-      thumbnail: "/api/placeholder/150/100"
+      thumbnail: "/src/assets/Core/gallery/aicgroup.jpeg"
     },
     {
       url: "/api/placeholder/1200/600",
