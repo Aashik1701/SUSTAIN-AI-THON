@@ -1,6 +1,7 @@
 import Accordion from "./Accordion";
 import FaqBG from "./FaqBG";
 import "./Faq.css";
+import RegisterButton from "../Register/RegisterButton";
 
 const Faq = () => {
   const faqs = [
@@ -64,14 +65,17 @@ const Faq = () => {
           </div>
         </div>
         <div className="flex flex-col gap-2 text-white sm:gap-4">
-          <div className="text-3xl font-semibold">Still have questions?</div>
-          <div className="w-10/12 text-base lg:w-3/12">
-            If you have any other questions related to project ideas submission, please feel free to reach out to this
-          </div>
-          <button className="w-[200px] py-3 border border-white rounded-full px-7">
-            Submit Project Idea
-          </button>
-        </div>
+      <div className="text-3xl font-semibold">Still have questions?</div>
+      <div className="text-base">Contact our coordinators:</div>
+      <div className="w-10/12 text-base lg:w-3/12">
+        <div>Om Mishra: +91 99902 50728</div>
+        <div>Melvin: +91 90800 59840</div>
+        <div>Aashik: +91 63821 43070</div>
+      </div>
+      <div className="text-base">
+        <RegisterButton className="py-3 border-white px-7 bg-blue-600 hover:bg-blue-700 transition duration-300" />
+      </div>
+    </div>
       </div>
     </div>
   );
