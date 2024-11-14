@@ -24,7 +24,7 @@ export default function App() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--event"
-          date={<span style={{ color: "white" }}>10 DEC</span>}
+          date={<span style={{ color: "white" }}>9 DEC</span>}
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<WorkIcon />}
         >
