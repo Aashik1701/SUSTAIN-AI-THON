@@ -3,6 +3,7 @@ import Card from "./Card";
 import theme1 from "../../assets/Themes/MentalHealth.png"; 
 import theme2 from "../../assets/Themes/economic.png"; 
 import theme3 from "../../assets/Themes/sustainablity.png"; 
+import BrochureButton from '../Button/BrochureButton';
 
 const Themes = () => {
   const themes = [
@@ -62,7 +63,7 @@ const Themes = () => {
             />
           </motion.div>
         ))}
-        
+        <BrochureButton />
       </div>
     </section>
   );
