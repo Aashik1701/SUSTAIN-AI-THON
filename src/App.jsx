@@ -19,11 +19,11 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <Countdown targetDate="2024-12-11T00:00:00" />
       <Navbar />
       <div id="home">
         <Home />
       </div>
+      <Countdown targetDate="2024-12-11T00:00:00" />
       <div id="about">
         <About />
       </div>

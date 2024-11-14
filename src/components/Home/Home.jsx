@@ -27,7 +27,7 @@ const Home = () => {
       </div>
 
       {/* Details Section */}
-      <div className="w-full relative z-10 rounded-2xl bg-black/30 backdrop-blur-sm py-6 sm:py-8 px-4 sm:px-6 lg:px-8">
+      <div className="w-full relative z-10 rounded- bg-black/30 backdrop-blur-sm py-6 sm:py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-6 sm:gap-8">
           {/* Venue Details */}
           <div className="text-center sm:text-left w-full sm:w-auto">
