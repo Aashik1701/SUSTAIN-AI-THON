@@ -14,25 +14,7 @@ const teamMembers = [
     image: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731605119/sustain-ai-thon/j9qavwdhsk8zj25vifps.jpg",
     linkedin: 'https://www.linkedin.com/in/melvin-b-88281626a/',
     instagram: 'https://www.instagram.com/_mr.redwing_/'
-  },
-  {
-    name: 'Dr. Dhavakumar P',
-    role: 'AIC Faculty Coordinator',
-    image: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731605118/sustain-ai-thon/lz391hso3i4mc3qi9ca2.jpg",
-    linkedin: 'https://www.linkedin.com/in/dhavakumar-p-408907250/'
-  },
-  {
-    name: 'Dr. Sivabalakrishnan M',
-    role: 'AIC Faculty Coordinator',
-    image: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731605118/sustain-ai-thon/tvcspslmo0vbzuilxhcc.jpg",
-    linkedin: 'https://www.linkedin.com/in/sivabalakrishnan-m-07246722/'
-  },
-  {
-    name: 'Dr. Umayal C',
-    role: 'Biosphere Faculty Coordinator',
-    image: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731605118/sustain-ai-thon/nqubjyiqlrxxnrop4g7z.jpg",
-    linkedin: 'https://www.linkedin.com/in/umayal-chandrahasan-15b4b7b7/'
-  },
+  }
 ];
 
 const Mastermind = () => {
@@ -87,7 +69,7 @@ const Mastermind = () => {
 
           {/* Right Box - Team Members Grid */}
           <div className="lg:w-1/2 p-6 rounded-2xl backdrop-blur-sm">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
               {/* First Row - Aashik and Melvin */}
               {teamMembers.slice(0, 2).map((member) => (
                 <div
