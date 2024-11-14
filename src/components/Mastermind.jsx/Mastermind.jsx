@@ -5,33 +5,33 @@ const teamMembers = [
   {
     name: 'DR. Dhavakumar P',
     role: 'AIC Faculty Coordinator',
-    image: 'src/assets/Core/Aic2.jpg',
+    image: '/src/assets/Core/Aic2.jpg',
     linkedin: 'https://www.linkedin.com/in/dhavakumar-p-408907250/'
     
   },
   {
     name: 'DR. Sivabalakrishnan M',
     role: 'AIC Faculty Coordinator',
-    image: 'src/assets/Core/Aic1.jpg',
+    image: '/src/assets/Core/Aic1.jpg',
     linkedin: 'https://www.linkedin.com/in/sivabalakrishnan-m-07246722/'
   },
   {
     name: 'Dr. Umayal C',
     role: 'Biosphere Faculty Coordinator',
-    image: 'src/assets/Core/bioshpereMam.jpg',
+    image: '/src/assets/Core/bioshpereMam.jpg',
     linkedin: 'https://www.linkedin.com/in/umayal-chandrahasan-15b4b7b7/'
   },
   {
     name: 'Mohammed Aashik',
     role: 'Event Coordinator',
-    image: 'src/assets/Core/aashik.jpeg',
+    image: '/src/assets/Core/aashik.jpeg',
     linkedin: 'https://www.linkedin.com/in/mohammed-aashik-f-690418263/',
     instagram: 'https://www.instagram.com/_ashik_1701_/'
   },
   {
     name: 'Melvin',
     role: 'Event Coordinator',
-    image: 'src/assets/Core/melvin.jpg',
+    image: '/src/assets/Core/melvin.jpg',
     linkedin: 'https://www.linkedin.com/in/melvin-b-88281626a/',
     instagram: 'https://www.instagram.com/_mr.redwing_/'
   }
