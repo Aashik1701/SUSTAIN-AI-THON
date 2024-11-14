@@ -19,8 +19,7 @@ import "./App.css";
 function App() {
   return (
     <div>
-      {/*set required date here bro*/}
-      <Countdown targetDate="2024-12-31T00:00:00" />
+      <Countdown targetDate="2024-12-11T00:00:00" />
       <Navbar />
       <div id="home">
         <Home />

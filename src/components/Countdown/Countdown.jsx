@@ -27,7 +27,7 @@ const Countdown = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen gap-10 text-white bg-black">
+    <div className="flex flex-col items-center justify-center w-screen gap-10 text-white bg-black py-28">
       <div className="text-3xl font-bold text-center sm:text-5xl">
         <span className="text-outline">HACKATHON</span>{" "}
         <span className="text-transparent bg-gradient-to-r from-GreenGradientCountDown to-BlueGradientCountDown bg-clip-text">
