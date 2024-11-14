@@ -63,7 +63,9 @@ const Themes = () => {
             />
           </motion.div>
         ))}
-        <BrochureButton />
+      </div>
+      <div className="flex justify-center mt-5">
+        <BrochureButton className="" />
       </div>
     </section>
   );
