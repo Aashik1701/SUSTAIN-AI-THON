@@ -24,7 +24,7 @@ const teamMembers = [
   {
     name: 'Mohammed Aashik',
     role: 'Student Coordinator',
-    image: '/src/assets/Core/aashik.jpeg',
+    image: 'src/assets/Core/aashik.jpeg',
     linkedin: 'https://www.linkedin.com/in/mohammed-aashik-f-690418263/',
     instagram: 'https://www.instagram.com/_ashik_1701_/'
   },
