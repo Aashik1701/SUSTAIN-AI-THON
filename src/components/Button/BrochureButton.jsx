@@ -1,17 +1,26 @@
 import styled from 'styled-components';
 
 const BrochureButton = () => {
-  return (
-    <StyledWrapper>
-      <button className="button">
-        <span className="button_lg">
-          <span className="button_sl" />
-          <span className="button_text">Download Brochure</span>
-        </span>
-      </button>
-    </StyledWrapper>
-  );
-}
+    const handleDownload = () => {
+      const link = document.createElement('a');
+      link.href = 'src/assets/SustainAIthonBrochure.pdf';
+      link.download = 'SustainAIthonBrochure.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    };
+  
+    return (
+      <StyledWrapper>
+        <button className="button" onClick={handleDownload}>
+          <span className="button_lg">
+            <span className="button_sl" />
+            <span className="button_text">Download Brochure</span>
+          </span>
+        </button>
+      </StyledWrapper>
+    );
+  }
 
 const StyledWrapper = styled.div`
   .button {
@@ -23,11 +32,11 @@ const StyledWrapper = styled.div`
     color: #0f1923;
     cursor: pointer;
     position: relative;
-    padding: 8px;
+    padding: 12px; /* Increased padding */
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px; /* Increased font size */
     transition: all .15s ease;
   }
 
@@ -75,7 +84,7 @@ const StyledWrapper = styled.div`
   .button_lg {
     position: relative;
     display: block;
-    padding: 10px 20px;
+    padding: 18px 30px; /* Increased padding */
     color: #fff;
     background-color: #0f1923;
     overflow: hidden;
