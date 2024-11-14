@@ -1,4 +1,4 @@
-import "../../App.css";
+import "../../App";
 import {
   VerticalTimeline,
   VerticalTimelineElement
@@ -9,12 +9,12 @@ const WorkIcon = () => <></>;
 
 export default function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundColor: "", color: "black" }}>
       <h1>Hackathon Event Timeline</h1>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--event"
-          date="14 NOV"
+          date={<span style={{ color: "white" }}>14 NOV</span>}
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<WorkIcon />}
         >
@@ -24,7 +24,7 @@ export default function App() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--event"
-          date="11 DEC"
+          date={<span style={{ color: "white" }}>11 DEC</span>}
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<WorkIcon />}
         >
@@ -34,7 +34,7 @@ export default function App() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--event"
-          date="12 DEC"
+          date={<span style={{ color: "white" }}>12 DEC</span>}
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<WorkIcon />}
         >
@@ -44,7 +44,7 @@ export default function App() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--event"
-          date="Review 1"
+          date={<span style={{ color: "white" }}>Review 1</span>}
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<WorkIcon />}
         >
@@ -59,7 +59,7 @@ export default function App() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--event"
-          date="Review 2"
+          date={<span style={{ color: "white" }}>Review 2</span>}
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<WorkIcon />}
         >
@@ -74,7 +74,7 @@ export default function App() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--event"
-          date="Review 3"
+          date={<span style={{ color: "white" }}>Review 3</span>}
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<WorkIcon />}
         >
@@ -89,7 +89,7 @@ export default function App() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--event"
-          date="13 DEC"
+          date={<span style={{ color: "white" }}>13 DEC</span>}
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<WorkIcon />}
         >

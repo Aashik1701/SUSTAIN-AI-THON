@@ -22,3 +22,6 @@
     position: relative;
     z-index: 1; /* Above the line */
   }
+  .vertical-timeline-element-date {
+    color: white;
+  }
