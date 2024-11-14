@@ -1,7 +1,7 @@
 
 import { Linkedin, Instagram } from 'lucide-react';
 import dhavakumar from '../../assets/Core/Aic2.jpg';
-import sivabalakrishnan from '../../assets/Core/siva.jpg';
+import sivabalakrishnan from '../../assets/Core/Aic1.jpg';
 import umayal from '../../assets/Core/bioshpereMam.jpg';
 import aashik from '../../assets/Core/aashik.jpeg';
 import melvin from '../../assets/Core/melvin.jpg';
