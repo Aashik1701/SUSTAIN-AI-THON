@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react';
 import gone from '../../assets/Core/gallery/g1.jpeg';
+import gtwo from '../../assets/Core/gallery/gtwo.jpg';
+import gthree from '../../assets/Core/gallery/gthree.jpg';
+import aicgroup from '../../assets/Core/gallery/aicgroup.jpeg';
 const Gallery = () => {
   const images = [
     {
@@ -8,19 +11,19 @@ const Gallery = () => {
       thumbnail: gone
     },
     {
-      url: "/src/assets/Core/gallery/gtwo.jpg",
+      url: gtwo,
       alt: "Presentation Session",
-      thumbnail: "src/assets/Core/gallery/gtwo.jpg"
+      thumbnail: gtwo
     },
     {
-      url: "src/assets/Core/gallery/gthree.png",
+      url: gthree,
       alt: "Workshop Session",
-      thumbnail: "src/assets/Core/gallery/gthree.png"
+      thumbnail: gthree
     },
     {
-      url: "src/assets/Core/gallery/aicgroup.jpeg",
+      url: aicgroup,
       alt: "Team Discussion",
-      thumbnail: "/src/assets/Core/gallery/aicgroup.jpeg"
+      thumbnail: aicgroup
     },
     {
       url: "/api/placeholder/1200/600",
