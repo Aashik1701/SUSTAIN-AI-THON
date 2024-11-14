@@ -84,7 +84,7 @@ const StyledWrapper = styled.div`
   .button_lg {
     position: relative;
     display: block;
-    padding: 18px 30px; /* Increased padding */
+    padding: 28px 30px; /* Increased padding */
     color: #fff;
     background-color: #0f1923;
     overflow: hidden;
