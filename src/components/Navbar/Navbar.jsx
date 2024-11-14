@@ -18,8 +18,8 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 p-3 bg-black outline-dashed outline-8 align-middle items-center outline-offset-8 text-white flex justify-between z-50">
-      <div className="text-2xl left-0 md:text-3xl lg:text-4xl font-bold">Sustain-Ai-Thon
-        <img src="../../assets/Logo/SDGhackLogo.png" alt="" className="w-10 h-10 inline-block " />
+      <div className="text-2xl left-0 md:text-3xl lg:text-4xl font-bold">
+        Sustain-Ai-Thon
       </div>
       <div className="hidden md:flex links space-x-10 items-center align-middle">
         <a href="#home" onClick={() => handleScrollTo('home')} className="hover:text-green-400 transition-colors duration-300 focus:underline">Home</a>

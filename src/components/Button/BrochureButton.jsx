@@ -121,8 +121,9 @@ const StyledWrapper = styled.div`
     bottom: -1px;
     left: -8px;
     width: 0;
-    background-color: #ff4655;
+    background-color: #00ff00;
     transform: skew(-15deg);
+    font-color: #0f1923;
     transition: all .2s ease;
   }
 

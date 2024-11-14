@@ -3,9 +3,9 @@ import { useState, useEffect } from 'react';
 const Gallery = () => {
   const images = [
     {
-      url: "/api/placeholder/1200/600",
+      url: "src/assets/Core/gallery/g1.jpeg",
       alt: "Hackathon Team Working",
-      thumbnail: "/api/placeholder/150/100"
+      thumbnail: "src/assets/Core/gallery/g1.jpeg"
     },
     {
       url: "/api/placeholder/1200/600",
@@ -42,9 +42,9 @@ const Gallery = () => {
   }, [images.length]);
 
   return (
-    <div className="w-full max-w-6xl mx-auto p-8 bg-black min-h-screen">
+    <div className="w-full max-w-6xl mx-auto p-8 min-h-screen">
       {/* Gallery Title with Gradient */}
-      <h1 className="text-6xl font-bold text-center mb-8 bg-gradient-to-r from-blue-400 to-teal-400 text-transparent bg-clip-text">
+      <h1 className="text-6xl font-bold text-center justify-center items-center mb-8 bg-gradient-to-r from-blue-400 to-teal-400 text-transparent bg-clip-text">
         GALLERY
       </h1>
 
