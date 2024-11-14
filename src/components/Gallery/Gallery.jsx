@@ -8,14 +8,14 @@ const Gallery = () => {
       thumbnail: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731605313/sustain-ai-thon/ixpuh0mrjegarfme8xlh.jpg"
     },
     {
-      url: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731605293/sustain-ai-thon/doiretqokleqsuitdu9t.png",
+      url: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731609167/sustain-ai-thon/evnd6gm5mik6n1jyaf5o.jpg",
       alt: "Presentation Session",
-      thumbnail: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731605293/sustain-ai-thon/doiretqokleqsuitdu9t.png"
+      thumbnail: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731609167/sustain-ai-thon/evnd6gm5mik6n1jyaf5o.jpg"
     },
     {
-      url: "",
+      url: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731609166/sustain-ai-thon/se0za6s3fkn9ix4qbdhz.jpg",
       alt: "Workshop Session",
-      thumbnail: ""
+      thumbnail: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731609166/sustain-ai-thon/se0za6s3fkn9ix4qbdhz.jpg"
     },
     {
       url: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731605348/sustain-ai-thon/tkhvivbmbivlpa6uyuid.jpg",

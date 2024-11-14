@@ -36,7 +36,7 @@ const Home = () => {
               VELLORE INSTITUTE OF TECHNOLOGY, CHENNAI
             </p>
             <p className="text-xs sm:text-sm text-gray-300 mt-1">
-              (Mahatma Gandhi Auditorium)
+              (MG Auditorium)
             </p>
           </div>
           

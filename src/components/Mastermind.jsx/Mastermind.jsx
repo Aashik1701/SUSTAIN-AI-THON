@@ -1,4 +1,3 @@
-
 import { Linkedin, Instagram } from 'lucide-react';
 
 const teamMembers = [
@@ -17,14 +16,13 @@ const teamMembers = [
     instagram: 'https://www.instagram.com/_mr.redwing_/'
   },
   {
-    name: 'DR. Dhavakumar P',
+    name: 'Dr. Dhavakumar P',
     role: 'AIC Faculty Coordinator',
     image: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731605118/sustain-ai-thon/lz391hso3i4mc3qi9ca2.jpg",
     linkedin: 'https://www.linkedin.com/in/dhavakumar-p-408907250/'
-    
   },
   {
-    name: 'DR. Sivabalakrishnan M',
+    name: 'Dr. Sivabalakrishnan M',
     role: 'AIC Faculty Coordinator',
     image: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731605118/sustain-ai-thon/tvcspslmo0vbzuilxhcc.jpg",
     linkedin: 'https://www.linkedin.com/in/sivabalakrishnan-m-07246722/'
@@ -35,7 +33,6 @@ const teamMembers = [
     image: "https://res.cloudinary.com/dvude7m7p/image/upload/v1731605118/sustain-ai-thon/nqubjyiqlrxxnrop4g7z.jpg",
     linkedin: 'https://www.linkedin.com/in/umayal-chandrahasan-15b4b7b7/'
   },
-  
 ];
 
 const Mastermind = () => {
@@ -90,11 +87,12 @@ const Mastermind = () => {
 
           {/* Right Box - Team Members Grid */}
           <div className="lg:w-1/2 p-6 rounded-2xl backdrop-blur-sm">
-            <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3  gap-6">
-              {teamMembers.map((member) => (
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+              {/* First Row - Aashik and Melvin */}
+              {teamMembers.slice(0, 2).map((member) => (
                 <div
                   key={member.name}
-                  className="group bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                  className="group bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 mb-4"
                 >
                   <div className="aspect-square overflow-hidden">
                     <img
@@ -131,18 +129,61 @@ const Mastermind = () => {
                   </div>
                 </div>
               ))}
+              {/* Second Row - Remaining Members */}
+              {teamMembers.slice(2).map((member) => (
+                <div
+                  key={member.name}
+                  className="group bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 mb-4"
+                >
+                  <div className="aspect-square overflow-hidden">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <div className="p-4 bg-gradient-to-b from-gray-800/0 to-gray-800">
+                    <h3 className="text-lg font-semibold mb-1 group-hover:text-blue-400 transition-colors">
+                      {member.name}
+                    </h3>
+                    <p className="text-gray-400 text-sm mb-3">{member.role}</p>
+                    
+                    {/* Social Media Icons */}
+                    <div className="flex gap-3 mt-2">
+                      <a
+                        href={member.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-400 hover:text-blue-500 transition-colors"
+                      >
+                        <Linkedin size={20} />
+                      </a>
+                      {member.instagram && (
+                        <a
+                          href={member.instagram}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-gray-400 hover:text-pink-500 transition-colors"
+                        >
+                          <Instagram size={20} />
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
 
             {/* View More Button */}
             <div className="mt-8 text-center">
-              
+              {/* Add any additional button or link here if needed */}
             </div>
           </div>
         </div>
 
         {/* Decorative Background Element */}
         <div className="fixed bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-green-500/10 to-transparent -z-10" />
-      </div>
+ </div>
     </div>
   );
 };
