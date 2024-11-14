@@ -6,22 +6,20 @@ const teamMembers = [
     name: 'DR. Dhavakumar P',
     role: 'AIC Faculty Coordinator',
     image: 'src/assets/Core/Aic2.jpg',
-    linkedin: 'https://www.linkedin.com/in/dhavakumar-p-408907250/',
-    instagram: 'https://www.instagram.com/dhavakumar'
+    linkedin: 'https://www.linkedin.com/in/dhavakumar-p-408907250/'
+    
   },
   {
     name: 'DR. Sivabalakrishnan M',
     role: 'AIC Faculty Coordinator',
     image: 'src/assets/Core/Aic1.jpg',
-    linkedin: 'https://www.linkedin.com/in/sivabalakrishnan-m-07246722/',
-    instagram: 'https://www.instagram.com/sivabalakrishnan'
+    linkedin: 'https://www.linkedin.com/in/sivabalakrishnan-m-07246722/'
   },
   {
     name: 'Dr. Umayal C',
     role: 'Biosphere Faculty Coordinator',
     image: 'src/assets/Core/bioshpereMam.jpg',
-    linkedin: 'https://www.linkedin.com/in/umayal-chandrahasan-15b4b7b7/',
-    instagram: 'https://www.instagram.com/umayal'
+    linkedin: 'https://www.linkedin.com/in/umayal-chandrahasan-15b4b7b7/'
   },
   {
     name: 'Mohammed Aashik',
