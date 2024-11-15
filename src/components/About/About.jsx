@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import BioSphereLogo from "../../assets/Logo/BioSphere.png";
 import AicLogo from "../../assets/Logo/AicLogo.png";
 
@@ -13,40 +14,87 @@ const About = () => {
 
   return (
     <>
-      <div className="w-screen min-h-screen p-10 lg:p-20" style={styles}>
-        <div className="mb-10 font-normal text-center text-teal-400 lg:text-right text-7xl custom-font">
+      <div className="w-screen min-h-screen p-5 lg:p-20" style={styles}>
+        <motion.div
+          className="mb-5 font-normal text-center text-teal-400 lg:text-right text-5xl lg:text-7xl custom-font"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
           ABOUT
-        </div>
+        </motion.div>
         <div>
           <div className="flex flex-col items-center justify-between gap-5 lg:gap-20 lg:flex-row">
-            <img
-              className="h-[150px] sm:h-[350px] rounded-full"
-              src={AicLogo}
-              alt="AI Club"
-            />
+            <motion.a
+              href="https://www.instagram.com/aiclubvitc/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-40 transition-opacity duration-300"
+              whileHover={{ scale: 1.1 }}
+            >
+              <motion.img
+                className="h-[100px] sm:h-[250px] rounded-full"
+                src={AicLogo}
+                alt="AI Club"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+              />
+            </motion.a>
             <div>
-              <div className="mb-2 text-4xl font-semibold text-center text-white lg:text-left">
-                Artificail Intelligence Club
-              </div>
-              <div className="mb-10 text-xl leading-8 text-center text-white lg:mb-0 lg:text-left">
+              <motion.div
+                className="mb-2 text-2xl lg:text-4xl font-semibold text-center text-white lg:text-left"
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+              >
+                Artificial Intelligence Club
+              </motion.div>
+              <motion.div
+                className="mb-5 lg:mb-10 text-lg lg:text-xl leading-8 text-center text-white lg:text-left"
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+              >
                 {content[0]}
-              </div>
+              </motion.div>
             </div>
           </div>
           <div className="flex flex-col-reverse items-center justify-between gap-10 lg:gap-20 lg:flex-row">
             <div>
-              <div className="mb-2 text-4xl font-semibold text-center text-white lg:text-right">
+              <motion.div
+                className="mb-2 text-2xl lg:text-4xl font-semibold text-center text-white lg:text-right"
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+              >
                 Biosphere
-              </div>
-              <div className="text-xl leading-8 text-center text-white lg:text-right">
+              </motion.div>
+              <motion.div
+                className="text-lg lg:text-xl leading-8 text-center text-white lg:text-right"
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+              >
                 {content[1]}
-              </div>
+              </motion.div>
             </div>
-            <img
-              className="h-[150px] sm:h-[350px] rounded-full"
-              src={BioSphereLogo}
-              alt="Biosphere Club"
-            />
+            <motion.a
+              href="https://www.instagram.com/biosphere_club_vitcc/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-40 transition-opacity duration-300"
+              whileHover={{ scale: 1.1 }}
+            >
+              <motion.img
+                className="h-[100px] sm:h-[250px] rounded-full"
+                src={BioSphereLogo}
+                alt="Biosphere Club"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+              />
+            </motion.a>
           </div>
         </div>
       </div>
