@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
 
 const Gallery = () => {
   const images = [
@@ -30,6 +31,30 @@ const Gallery = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+  const galleryRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect(); // Stop observing once visible
+        }
+      },
+      { threshold: 0.1 } // Adjust the threshold as needed
+    );
+
+    if (galleryRef.current) {
+      observer.observe(galleryRef.current);
+    }
+
+    return () => {
+      if (galleryRef.current) {
+        observer.unobserve(galleryRef.current);
+      }
+    };
+  }, []);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -42,7 +67,7 @@ const Gallery = () => {
   }, [images.length]);
 
   return (
-    <div className="w-full max-w-6xl mx-auto p-8 min-h-screen">
+    <div ref={galleryRef} className="w-full max-w-6xl mx-auto p-8 min-h-screen">
       {/* Gallery Title with Gradient */}
       <h1 className="text-6xl font-bold text-center justify-center items-center mb-8 bg-gradient-to-r from-blue-400 to-teal-400 text-transparent bg-clip-text">
         GALLERY
@@ -50,21 +75,29 @@ const Gallery = () => {
 
       <div className="relative">
         {/* Main Image Container */}
-        <div className="relative h-[500px] overflow-hidden rounded-lg mb-4 group">
+        <motion.div 
+          className="relative h-[500px] overflow-hidden rounded-lg mb-4 group"
+          initial={{ opacity: 0, y: 20 }} 
+          animate={isVisible ? { opacity: 1, y: 0 } : {}} // Animate only when visible
+          transition={{ duration: 0.5 }}
+        >
           <div className="absolute w-full h-full transition-all duration-700 ease-in-out"
                style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
             {images.map((image, index) => (
-              <div
+              <motion.div
                 key={index}
                 className="absolute top-0 left-0 w-full h-full transition-opacity duration-500"
                 style={{ transform: `translateX(${index * 100}%)` }}
+                initial={{ opacity: 0 }} 
+                animate={isVisible ? { opacity: 1 } : {}} // Animate opacity when visible
+                transition={{ duration: 0.5 }}
               >
                 <img
                   src={image.url}
                   alt={image.alt}
                   className="w-full h-full object-cover"
                 />
-              </div>
+              </motion.div>
             ))}
           </div>
 
@@ -83,24 +116,27 @@ const Gallery = () => {
               ›
             </button>
           </div>
-        </div>
+        </motion.div>
 
         {/* Thumbnails */}
         <div className="flex justify-center gap-2 mt-4">
           {images.map((image, index) => (
-            <button
+            <motion.button
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`relative overflow-hidden h-20 w-32 rounded-md transition-all ${
                 currentIndex === index ? 'ring-2 ring-blue-400' : 'opacity-50 hover:opacity-100'
               }`}
+              initial={{ scale: 0.8 }} 
+              animate={isVisible ? { scale: 1 } : {}} // Animate scale when visible
+              transition={{ duration: 0.3 }}
             >
               <img
                 src={image.thumbnail}
                 alt={`Thumbnail ${index + 1}`}
                 className="w-full h-full object-cover"
               />
-            </button>
+            </motion.button>
           ))}
         </div>
       </div>
