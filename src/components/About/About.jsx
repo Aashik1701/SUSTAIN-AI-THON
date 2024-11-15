@@ -13,6 +13,10 @@ const About = () => {
     "The Biosphere Club at VIT Chennai was started with the vision of raising awareness and making a meaningful impact on pressing environmental issues such as global warming and climate change. Driven by a commitment to sustainability and to creating a better world for future generations, the club organizes a range of initiatives, including beach cleanup drives, plantation projects, and guest seminars on wildlife protection. Through these efforts, the Biosphere Club has become a hub for nature lovers and eco-enthusiasts.",
   ];
 
+  const handleImageClick = (url) => {
+    window.open(url, "_blank");
+  };
+
   return (
     <div className="w-screen min-h-screen p-10 lg:p-20" style={styles}>
       <motion.div
@@ -26,12 +30,13 @@ const About = () => {
       <div>
         <div className="flex flex-col items-center justify-between gap-5 lg:gap-20 lg:flex-row">
           <motion.img
-            className="h-[150px] sm:h-[350px] rounded-full object-cover"
+            className="h-[150px] sm:h-[350px] rounded-full object-cover hover:scale-110 transition-transform duration-300 cursor-pointer"
             src={AicLogo}
             alt="AI Club"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
+            onClick={() => handleImageClick("https://www.instagram.com/aiclubvitc/")}
           />
           <div>
             <motion.div
@@ -72,12 +77,13 @@ const About = () => {
             </motion.div>
           </div>
           <motion.img
-            className="h-[150px] sm:h-[350px] rounded-full object-cover"
+            className="h-[150px] sm:h-[350px] rounded-full object-cover hover:scale-110 transition-transform duration-300 cursor-pointer"
             src={BioSphereLogo}
- alt="Biosphere Club"
+            alt="Biosphere Club"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
+            onClick={() => handleImageClick("https://www.instagram.com/biosphere_club_vitcc/")}
           />
         </div>
       </div>

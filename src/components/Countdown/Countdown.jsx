@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 const Countdown = ({ targetDate }) => {
   const calculateTimeLeft = () => {
@@ -35,30 +36,37 @@ const Countdown = ({ targetDate }) => {
         </span>
       </div>
       <div className="grid grid-cols-2 gap-4 sm:flex sm:flex-row sm:gap-10">
-        <div className="flex flex-col justify-center items-center h-[150px] w-[150px] sm:h-[180px] sm:w-[180px] md:h-[210px] md:w-[210px] lg:h-[240px] lg:w-[240px] rounded-full bg-gradient-to-b via-BlueGradientCountDown/0 from-BlueGradientCountDown to-black">
-          <div className="text-4xl font-bold text-transparent sm:text-5xl md:text-6xl lg:text-7xl bg-gradient-to-b from-GreenGradientCountDown to-BlueGradientCountDown bg-clip-text">
-            {timeLeft.days}
-          </div>
-          <div className="text-xl font-semibold sm:text-xl md:text-2xl">DAYS</div>
-        </div>
-        <div className="flex flex-col justify-center items-center h-[150px] w-[150px] sm:h-[180px] sm:w-[180px] md:h-[210px] md:w-[210px] lg:h-[240px] lg:w-[240px] rounded-full bg-gradient-to-b via-GreenGradientCountDown/0 from-black to-GreenGradientCountDown">
-          <div className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl text-outline">
-            {timeLeft.hours}
-          </div>
-          <div className="text-xl font-semibold sm:text-xl md:text-2xl">HOURS</div>
-        </div>
-        <div className="flex flex-col justify-center items-center h-[150px] w-[150px] sm:h-[180px] sm:w-[180px] md:h-[210px] md:w-[210px] lg:h-[240px] lg:w-[240px] rounded-full bg-gradient-to-b via-BlueGradientCountDown/0 from-BlueGradientCountDown to-black">
-          <div className="text-4xl font-bold text-transparent sm:text-5xl md:text-6xl lg:text-7xl bg-gradient-to-b from-GreenGradientCountDown to-BlueGradientCountDown bg-clip-text">
-            {timeLeft.minutes}
-          </div>
-          <div className="text-xl font-semibold sm:text-xl md:text-2xl">MINUTES</div>
-        </div>
-        <div className="flex flex-col justify-center items-center h-[150px] w-[150px] sm:h-[180px] sm:w-[180px] md:h-[210px] md:w-[210px] lg:h-[240px] lg:w-[240px] rounded-full bg-gradient-to-b via-GreenGradientCountDown/0 from-black to-GreenGradientCountDown">
-          <div className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl text-outline">
-            {timeLeft.seconds}
-          </div>
-          <div className="text-xl font-semibold sm:text-xl md:text-2xl">SECONDS</div>
-        </div>
+        {Object.entries(timeLeft).map(([unit, value]) => {
+          // Create a ref for each unit
+          const ref = useRef(null);
+          const isInView = useInView(ref, { once: true, margin: "0px" });
+
+          return (
+            <motion.div
+              ref={ref}
+              key={unit}
+              className={`flex flex-col justify-center items-center h-[150px] w-[150px] sm:h-[180px] sm:w-[180px] md:h-[210px] md:w-[210px] lg:h-[240px] lg:w-[240px] rounded-full ${
+                unit === "days"
+                  ? "bg-gradient-to-b via-BlueGradientCountDown/0 from-BlueGradientCountDown to-black"
+                  : unit === "hours"
+                  ? "bg-gradient-to-b via-GreenGradientCountDown/0 from-black to-GreenGradientCountDown"
+                  : unit === "minutes"
+                  ? "bg-gradient-to-b via-BlueGradientCountDown/0 from-BlueGradientCountDown to-black"
+                  : "bg-gradient-to-b via-GreenGradientCountDown/0 from-black to-GreenGradientCountDown"
+              }`}
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={isInView ? { scale: 0.9, opacity: 1, boxShadow: "0 0 20px rgba(255, 255, 255, 0.7)" } : {}}
+              transition={{ duration: 0.5 }}
+            >
+              <div className="text-4xl font-bold text-transparent sm:text-5xl md:text-6xl lg:text-7xl bg-gradient-to-b from-GreenGradientCountDown to-BlueGradientCountDown bg-clip-text">
+                {value}
+              </div>
+              <div className="text-xl font-semibold sm:text-xl md:text-2xl capitalize">
+                {unit.toUpperCase()}
+              </div>
+            </motion.div>
+          );
+        })}
       </div>
     </div>
   );
