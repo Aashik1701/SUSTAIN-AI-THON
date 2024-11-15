@@ -2,11 +2,11 @@
 
 const Location = () => {
   return (
-    <section id="Location" className="flex flex-col items-center justify-center gap-10 p-5 md:p-10">
-      <h1 className="inter-semibold text-3xl md:text-4xl lg:text-5xl text-white text-center">Ideathon Competition</h1>
-      <div className='inter-semibold flex flex-col md:flex-row items-center justify-center gap-8 text-white'>
-        <span>VIT CHENNAI</span>
-        <span>KELAMBAKKAM</span>
+    <section id="Location" className="flex flex-col items-center justify-center gap-10 p-5 md:p-10 mt-8">
+      <h1 className="inter-semibold text-3xl md:text-4xl lg:text-5xl text-white text-center ">Ideathon Competition</h1>
+      <div className='inter-semibold flex flex-col md:flex-row items-center justify-center gap-8 sm:gap-2 sm:p-2 text-white'>
+        <span className="text-center md:text-left">VIT CHENNAI</span>
+        <span className="text-center md:text-left">KELAMBAKKAM</span>
       </div>
       <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 w-full'>
         <div className='w-full'>

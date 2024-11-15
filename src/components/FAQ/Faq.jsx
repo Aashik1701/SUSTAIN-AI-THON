@@ -48,9 +48,9 @@ const Faq = () => {
   ];
 
   return (
-    <div className="relative w-screen h-screen flex items-center justify-center">
+    <div className="relative w-screen min-h-screen flex items-center justify-center mb-10"> {/* Add mb-10 here */}
       <FaqBG />
-      <div className="absolute top-0 left-0 flex flex-col w-screen h-screen pl-10 sm:pl-20 justify-evenly">
+      <div className="absolute top-0 left-0 flex flex-col w-screen min-h-screen pl-10 sm:pl-20 justify-evenly">
         <div className="text-5xl font-semibold text-white">FAQs</div>
         <div className="flex flex-wrap justify-between">
           <div className="flex flex-col w-full sm:w-1/2">
@@ -64,18 +64,18 @@ const Faq = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-col gap-2 text-white sm:gap-4">
-      <div className="text-3xl font-semibold">Still have questions?</div>
-      <div className="text-base">Contact our coordinators:</div>
-      <div className="w-10/12 text-base lg:w-3/12">
-        <div>Om Mishra: +91 99902 50728</div>
-        <div>Melvin: +91 90800 59840</div>
-        <div>Aashik: +91 63821 43070</div>
-      </div>
-      <div className="text-base">
-        <RegisterButton className="py-3 border-white px-7 bg-blue-600 hover:bg-blue-700 transition duration-300" />
-      </div>
-    </div>
+        <div className="flex flex-col gap-2 text-white sm:gap-4 mt-4 sm:mt-8">
+          <div className="text-3xl font-semibold">Still have questions?</div>
+          <div className="text-base">Contact our coordinators:</div>
+          <div className="w-full sm:w-10/12 lg:w-3/12">
+            <div>Om Mishra: +91 99902 50728</div>
+            <div>Melvin: +91 90800 59840</div>
+            <div>Aashik: +91 63821 43070</div>
+          </div>
+          <div className="text-base mt-4 sm:mt-8 w-full sm:w-10/12 lg:w-3/12">
+            <RegisterButton className="py-3 border-white px-7 bg-blue-600 hover:bg-blue-700 transition duration-300" />
+          </div>
+        </div>
       </div>
     </div>
   );
