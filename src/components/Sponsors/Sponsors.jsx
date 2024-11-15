@@ -15,9 +15,9 @@ const Sponsors = () => {
             <a href="https://www.instagram.com/cittaa_powerofmind/"><img src={cittaLogo} className="max-h-[220px] rounded-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-300" alt="Citta Logo"/> 
             </a>
               {/* Updated logo */}
-              <h2 className="inter-semibold text-2xl align-middle uppercase tracking-wide">Citta</h2>
+              <h2 className="inter-semibold text-2xl align-middle uppercase tracking-wide">Cittaa</h2>
               <p className="inter-semibold text-sm lg:text-md sm:text-md max-w-[500px] text-wrap text-center">
-                Healing is a journey, and Citta is here to help you every step of the way.
+                Healing is a journey, and Cittaa is here to help you every step of the way.
               </p>
               <h1 className="inter-semibold text-xl md:text-2xl lg:text-3xl mt-5">Problem Statement:</h1>
               <a 
