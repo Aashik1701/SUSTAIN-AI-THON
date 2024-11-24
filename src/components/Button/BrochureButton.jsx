@@ -1,25 +1,25 @@
 import styled from 'styled-components';
 
 const BrochureButton = () => {
-    const handleDownload = () => {
-      const link = document.createElement('a');
-      link.href = 'src/assets/SustainAIthonBrochure.pdf';
-      link.download = 'SustainAIthonBrochure.pdf';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    };
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = "https://drive.google.com/uc?export=download&id=1NuQ99guqn2_4ix7YXqtLTy772EOt6x0G";
+    link.download = 'SustainAIthonBrochure.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   
-    return (
-      <StyledWrapper>
-        <button className="button" onClick={handleDownload}>
-          <span className="button_lg">
-            <span className="button_sl" />
-            <span className="button_text">Download Brochure</span>
-          </span>
-        </button>
-      </StyledWrapper>
-    );
+  return (
+    <StyledWrapper>
+    <button className="button" onClick={handleDownload}>
+      <span className="button_lg">
+      <span className="button_sl" />
+      <span className="button_text">Download Brochure</span>
+      </span>
+    </button>
+    </StyledWrapper>
+  );
   }
 
 const StyledWrapper = styled.div`
