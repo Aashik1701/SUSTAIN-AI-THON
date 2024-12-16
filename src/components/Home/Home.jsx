@@ -54,7 +54,7 @@ const Home = () => {
             animate="visible"
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            2024
+            2025
           </motion.h2>
           <div className="mt-6 sm:mt-8 lg:mt-10">
             {/* Register Button with animation */}
@@ -87,7 +87,7 @@ const Home = () => {
           {/* Date Details */}
           <div className="text-center sm :text-left w-full sm:w-auto">
             <h3 className="text-green-500 text-lg sm:text-xl font-bold mb-1 sm:mb-2">DATE</h3>
-            <p className="text-base sm:text-lg lg:text-xl">11-12 December</p>
+            <p className="text-base sm:text-lg lg:text-xl">17-18 January</p>
           </div>
           
           {/* Brochure Button with animation */}
