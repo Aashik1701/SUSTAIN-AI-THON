@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const BrochureButton = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = "https://drive.google.com/uc?export=download&id=1NuQ99guqn2_4ix7YXqtLTy772EOt6x0G";
+    link.href = "/src/assets/SustainAIthonBrochure.pdf";
     link.download = 'SustainAIthonBrochure.pdf';
     document.body.appendChild(link);
     link.click();
