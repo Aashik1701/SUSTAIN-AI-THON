@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const BrochureButton = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = "/src/assets/SustainAIthonBrochure.pdf";
+    link.href = "https://vitacin-my.sharepoint.com/:b:/g/personal/mohammedaashik_f2022_vitstudent_ac_in/ESVRdW5odHNJga2EA-spNwQBwvbiWcFUnhFmDsSKFcMojw";
     link.download = 'SustainAIthonBrochure.pdf';
     document.body.appendChild(link);
     link.click();
