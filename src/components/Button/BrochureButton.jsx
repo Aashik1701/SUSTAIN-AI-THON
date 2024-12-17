@@ -4,7 +4,8 @@ const BrochureButton = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = "https://vitacin-my.sharepoint.com/:b:/g/personal/mohammedaashik_f2022_vitstudent_ac_in/ESVRdW5odHNJga2EA-spNwQBwvbiWcFUnhFmDsSKFcMojw";
-    link.download = 'SustainAIthonBrochure.pdf';
+    link.setAttribute('download', 'SustainAIthonBrochure.pdf');
+    link.setAttribute('target', '_blank');
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
