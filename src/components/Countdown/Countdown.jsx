@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 
 const Countdown = ({ targetDate }) => {
   const calculateTimeLeft = () => {
-    const targetDate = new Date('2025-01-17T00:00:00');
+    const targetDate = new Date('2025-01-20T00:00:00');
     const difference = new Date(targetDate) - new Date();
     let timeLeft = {};
 
